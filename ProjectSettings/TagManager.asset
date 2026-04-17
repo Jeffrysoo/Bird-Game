@@ -6,6 +6,9 @@ TagManager:
   tags:
   - logic
   - Bird
+  - Tag
+  - Pipe
+  - AiBird
   layers:
   - Default
   - TransparentFX

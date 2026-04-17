@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2338474113920803887}
   m_Layer: 0
   m_Name: DownPipe
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 8230622947597769}
   m_Layer: 0
   m_Name: TopPipe
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 6982235148575557274}
   m_Layer: 0
   m_Name: Pipe
-  m_TagString: logic
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,10 +516,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffebcea61e9cc064f93651b61d5fc02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  baseSpeed: 3
-  speedincrease: 0.4
   deadzone: -10
-  currentMoveSpeed: 0
+  pipeSpeed: 0
 --- !u!114 &6982235148575557274
 MonoBehaviour:
   m_ObjectHideFlags: 0

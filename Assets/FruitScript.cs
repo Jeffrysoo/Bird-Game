@@ -35,7 +35,7 @@ public class FruitScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Bird"))
         {
             // Give points, and destroy the fruit!
-            logic.AddScore(bonusMarks);
+            logic.AddPlayerScore(bonusMarks);
             AudioSource.PlayClipAtPoint(fruitSoundClip, Camera.main.transform.position); //Play the sound at the camera's location
             Destroy(gameObject);
         }

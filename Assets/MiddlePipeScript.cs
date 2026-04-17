@@ -2,28 +2,33 @@ using UnityEngine;
 
 public class MiddlePipeScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int score = 1;
     public LogicScript logic;
     public AudioSource pointSound;
+
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("logic").GetComponent<LogicScript>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer==3)
+        // If the human passes through
+        if (collision.gameObject.CompareTag("Player"))
         {
-           logic.AddScore(score);
-            pointSound.Play();
+            logic.AddPlayerScore(1);
+
+            if (pointSound != null)
+            {
+                pointSound.Play();
+            }
         }
-        
+        // If the AI passes through
+        else if (collision.gameObject.CompareTag("AiBird"))
+        {
+            logic.AddAIScore(1);
+
+           
+        }
     }
 }
